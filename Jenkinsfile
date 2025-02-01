@@ -30,6 +30,7 @@ pipeline {
                 withCredentials([usernamePassword(credentialsId:"dockerHub", usernameVariable:"dockerHubUser", passwordVariable:"dockerHubPas")]) {
                 sh "docker run -d -p 8000:8000 ${env.dockerHubUser}/todo-note-app:v1" 
                 }
+            }
         }
     }
 }
