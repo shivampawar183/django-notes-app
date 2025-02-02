@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-    image : "shivam139/todo-note-app:v1"
-    port :
+    image : shivam139/todo-note-app:v1
+    ports :
         - "8000:8000"
